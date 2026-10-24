@@ -1,0 +1,11 @@
+# Pinned environment of Release Candidate 1 (Phase 4.8). These are the exact versions the RC1 CSV and every pinned
+# hash were produced with; Python 3.14.8 on Linux x86-64. Other versions are untested -- floating-point results can
+# differ between NumPy builds, so the byte-identical guarantee is only given for this set.
+#
+#   inference (solution/):   numpy                       (everything else is the standard library)
+#   scoring / validation:    numpy + pandas              (evaluation/ -- reads CSVs only)
+#   tests:                   standard-library unittest   (no extra dependency)
+#
+# No video, deep-learning or computer-vision package is used by RC1.
+numpy==2.5.4
+pandas==3.0.6
